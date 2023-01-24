@@ -7,6 +7,12 @@
 
 import Foundation
 
+struct VM {
+    static func createLaunchViewModel() -> ActivationViewModel {
+        return ActivationViewModel(activationRepository: DI.shared.repositoryModules.activationRepository)
+    }
+}
+
 private final class DI {
     static let shared = DI()
 
@@ -19,11 +25,5 @@ private final class DI {
         moyaModules = MoyaModules.inject()
         apiModules = ApiModules.inject(depsModules: moyaModules)
         repositoryModules = RepositoryModules.inject(depsModules: apiModules)
-    }
-}
-
-struct VM {
-    static func createLaunchViewModel() -> ActivationViewModel {
-        return ActivationViewModel(activationRepository: DI.shared.repositoryModules.activationRepository)
     }
 }
