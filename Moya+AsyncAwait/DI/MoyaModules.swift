@@ -7,23 +7,23 @@
 
 import Moya
 
-struct MoyaModule {
+struct MoyaModules {
     let activationProvider: MoyaProvider<Activation>
 
-    static func inject() -> MoyaModule {
+    static func inject() -> MoyaModules {
         let loggerPluging: PluginType = NetworkLoggerPlugin(
             configuration: .init(logOptions: .verbose)
         )
 
         #if MOCK
-            return MoyaModule(
+            return MoyaModules(
                 activationProvider: MoyaProvider<Activation>(
                     stubClosure: MoyaProvider.immediatelyStub,
                     plugins: [loggerPluging]
                 )
             )
         #else
-            return MoyaModule(
+            return MoyaModules(
                 activationProvider: MoyaProvider<Activation>(
                     plugins: [loggerPluging]
                 )

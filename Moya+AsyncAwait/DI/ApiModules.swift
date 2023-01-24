@@ -10,7 +10,7 @@ import Foundation
 struct ApiModules {
     let activationApi: ActivationApiProtocol
 
-    static func inject(depsModules: MoyaModule) -> ApiModules {
+    static func inject(depsModules: MoyaModules) -> ApiModules {
         ApiModules(
             activationApi: ActivationApi(provider: depsModules.activationProvider)
         )

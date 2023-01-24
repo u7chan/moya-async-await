@@ -10,9 +10,9 @@ import Foundation
 struct RepositoryModules {
     let activationRepository: ActivationRepositoryProtocol
 
-    static func inject() -> RepositoryModules {
+    static func inject(depsModules: ApiModules) -> RepositoryModules {
         RepositoryModules(
-            activationRepository: ActivationRepository()
+            activationRepository: ActivationRepository(activationApi: depsModules.activationApi)
         )
     }
 }

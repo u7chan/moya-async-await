@@ -8,10 +8,13 @@
 import Foundation
 
 final class ActivationRepository {
-    // private let loginApi: LoginApiProtocol
+    private let activationApi: ActivationApiProtocol
 
     init(
-    ) {}
+        activationApi: ActivationApiProtocol
+    ) {
+        self.activationApi = activationApi
+    }
 }
 
 // MARK: - ActivationRepositoryProtocol

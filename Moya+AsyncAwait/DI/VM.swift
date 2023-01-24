@@ -8,19 +8,22 @@
 import Foundation
 
 private final class DI {
-    // let apiModules: ApiModules
-    let repositories: RepositoryModules
+    static let shared = DI()
+
+    let repositoryModules: RepositoryModules
+
+    private let moyaModules: MoyaModules
+    private let apiModules: ApiModules
 
     private init() {
-        // self.apiModules = ApiModules.inject()
-        repositories = RepositoryModules.inject() // depsModules: self.apiModules
+        moyaModules = MoyaModules.inject()
+        apiModules = ApiModules.inject(depsModules: moyaModules)
+        repositoryModules = RepositoryModules.inject(depsModules: apiModules)
     }
-
-    static let shared = DI()
 }
 
 enum VM {
     static func createLaunchViewModel() -> ActivationViewModel {
-        return ActivationViewModel(activationRepository: DI.shared.repositories.activationRepository)
+        return ActivationViewModel(activationRepository: DI.shared.repositoryModules.activationRepository)
     }
 }
