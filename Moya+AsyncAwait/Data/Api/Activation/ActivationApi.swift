@@ -5,11 +5,15 @@
 //  Created by unagami on 2023/01/24.
 //
 
-import Foundation
+import Moya
 
 final class ActivationApi {
-    init(
-    ) {}
+    private let provider: MoyaProvider<Activation>
+
+    init(provider: MoyaProvider<Activation>
+    ) {
+        self.provider = provider
+    }
 }
 
 // MARK: - ActivationApiProtocol

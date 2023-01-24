@@ -1,5 +1,5 @@
 //
-//  ActivationMoyaApi.swift
+//  Activation.swift
 //  Moya+AsyncAwait
 //
 //  Created by unagami on 2023/01/24.
@@ -7,13 +7,13 @@
 
 import Moya
 
-enum ActivationMoyaApi {
+enum Activation {
     case activation(code: String, pin: String)
 }
 
 // MARK: - TargetType
 
-extension ActivationMoyaApi: TargetType {
+extension Activation: TargetType {
     var baseURL: URL { URL(string: "https://httpbin.org")! }
 
     var path: String {

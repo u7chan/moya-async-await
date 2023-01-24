@@ -25,7 +25,9 @@
 		AC11B22929801480008D7D8D /* RepositoryModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B22829801480008D7D8D /* RepositoryModules.swift */; };
 		AC11B22D298016FB008D7D8D /* ActivationApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B22C298016FB008D7D8D /* ActivationApiProtocol.swift */; };
 		AC11B22F2980173F008D7D8D /* ActivationApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B22E2980173F008D7D8D /* ActivationApi.swift */; };
-		AC11B23229801791008D7D8D /* ActivationMoyaApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B23129801791008D7D8D /* ActivationMoyaApi.swift */; };
+		AC11B23229801791008D7D8D /* Activation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B23129801791008D7D8D /* Activation.swift */; };
+		AC11B234298018A9008D7D8D /* ApiModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B233298018A9008D7D8D /* ApiModules.swift */; };
+		AC11B236298019E0008D7D8D /* MoyaModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B235298019E0008D7D8D /* MoyaModules.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +70,9 @@
 		AC11B22829801480008D7D8D /* RepositoryModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModules.swift; sourceTree = "<group>"; };
 		AC11B22C298016FB008D7D8D /* ActivationApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationApiProtocol.swift; sourceTree = "<group>"; };
 		AC11B22E2980173F008D7D8D /* ActivationApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationApi.swift; sourceTree = "<group>"; };
-		AC11B23129801791008D7D8D /* ActivationMoyaApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationMoyaApi.swift; sourceTree = "<group>"; };
+		AC11B23129801791008D7D8D /* Activation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activation.swift; sourceTree = "<group>"; };
+		AC11B233298018A9008D7D8D /* ApiModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiModules.swift; sourceTree = "<group>"; };
+		AC11B235298019E0008D7D8D /* MoyaModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaModules.swift; sourceTree = "<group>"; };
 		BBEEFB85BF771BE7228F0B80 /* Pods-Moya+AsyncAwait.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya+AsyncAwait.debug.xcconfig"; path = "Target Support Files/Pods-Moya+AsyncAwait/Pods-Moya+AsyncAwait.debug.xcconfig"; sourceTree = "<group>"; };
 		CA3936DECBFCC1F0F552A856 /* Pods_Moya_AsyncAwaitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moya_AsyncAwaitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A70A9F76A37BE5576B8F60 /* Pods_Moya_AsyncAwait.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moya_AsyncAwait.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -224,6 +228,8 @@
 		AC11B21D29801018008D7D8D /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				AC11B235298019E0008D7D8D /* MoyaModules.swift */,
+				AC11B233298018A9008D7D8D /* ApiModules.swift */,
 				AC11B22829801480008D7D8D /* RepositoryModules.swift */,
 				AC11B21E2980102F008D7D8D /* VM.swift */,
 			);
@@ -267,7 +273,7 @@
 		AC11B2302980176A008D7D8D /* Moya */ = {
 			isa = PBXGroup;
 			children = (
-				AC11B23129801791008D7D8D /* ActivationMoyaApi.swift */,
+				AC11B23129801791008D7D8D /* Activation.swift */,
 			);
 			path = Moya;
 			sourceTree = "<group>";
@@ -522,14 +528,16 @@
 			files = (
 				AC11B222298011AB008D7D8D /* String+isAlphanumeric.swift in Sources */,
 				AC11B21A29800CAD008D7D8D /* ActivationView.swift in Sources */,
-				AC11B23229801791008D7D8D /* ActivationMoyaApi.swift in Sources */,
+				AC11B23229801791008D7D8D /* Activation.swift in Sources */,
 				AC11B21C29800E62008D7D8D /* ActivationViewModel.swift in Sources */,
 				AC11B22929801480008D7D8D /* RepositoryModules.swift in Sources */,
 				AC11B21F2980102F008D7D8D /* VM.swift in Sources */,
+				AC11B236298019E0008D7D8D /* MoyaModules.swift in Sources */,
 				AC11B1EB298005D4008D7D8D /* Application.swift in Sources */,
 				AC11B22F2980173F008D7D8D /* ActivationApi.swift in Sources */,
 				AC11B224298012A3008D7D8D /* ActivationRepositoryProtocol.swift in Sources */,
 				AC11B22D298016FB008D7D8D /* ActivationApiProtocol.swift in Sources */,
+				AC11B234298018A9008D7D8D /* ApiModules.swift in Sources */,
 				AC11B227298012C7008D7D8D /* ActivationRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
