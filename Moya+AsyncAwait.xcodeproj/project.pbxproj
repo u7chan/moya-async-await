@@ -10,7 +10,7 @@
 		3AF476AE028AECDC067AF313 /* Pods_Moya_AsyncAwait.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A70A9F76A37BE5576B8F60 /* Pods_Moya_AsyncAwait.framework */; };
 		52C6DC6CD2D7FCD486F9D5B5 /* Pods_Moya_AsyncAwait_Moya_AsyncAwaitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53FD9D5311412AE0B5BFF25 /* Pods_Moya_AsyncAwait_Moya_AsyncAwaitUITests.framework */; };
 		55AC5B5EDA4F3223756AE352 /* Pods_Moya_AsyncAwaitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3936DECBFCC1F0F552A856 /* Pods_Moya_AsyncAwaitTests.framework */; };
-		AC11B1EB298005D4008D7D8D /* Moya_AsyncAwaitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B1EA298005D4008D7D8D /* Moya_AsyncAwaitApp.swift */; };
+		AC11B1EB298005D4008D7D8D /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B1EA298005D4008D7D8D /* Application.swift */; };
 		AC11B1ED298005D4008D7D8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B1EC298005D4008D7D8D /* ContentView.swift */; };
 		AC11B1EF298005D7008D7D8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC11B1EE298005D7008D7D8D /* Assets.xcassets */; };
 		AC11B1F2298005D7008D7D8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC11B1F1298005D7008D7D8D /* Preview Assets.xcassets */; };
@@ -42,7 +42,7 @@
 		89D0D6FC8236A1513B2CC596 /* Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests.release.xcconfig"; path = "Target Support Files/Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests/Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A9777632ADF387A0B976F1B3 /* Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests.debug.xcconfig"; path = "Target Support Files/Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests/Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC11B1E7298005D4008D7D8D /* Moya+AsyncAwait.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moya+AsyncAwait.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC11B1EA298005D4008D7D8D /* Moya_AsyncAwaitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moya_AsyncAwaitApp.swift; sourceTree = "<group>"; };
+		AC11B1EA298005D4008D7D8D /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		AC11B1EC298005D4008D7D8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC11B1EE298005D7008D7D8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC11B1F1298005D7008D7D8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -124,10 +124,10 @@
 		AC11B1E9298005D4008D7D8D /* Moya+AsyncAwait */ = {
 			isa = PBXGroup;
 			children = (
-				AC11B1EA298005D4008D7D8D /* Moya_AsyncAwaitApp.swift */,
-				AC11B1EC298005D4008D7D8D /* ContentView.swift */,
 				AC11B1EE298005D7008D7D8D /* Assets.xcassets */,
 				AC11B1F0298005D7008D7D8D /* Preview Content */,
+				AC11B1EA298005D4008D7D8D /* Application.swift */,
+				AC11B1EC298005D4008D7D8D /* ContentView.swift */,
 			);
 			path = "Moya+AsyncAwait";
 			sourceTree = "<group>";
@@ -406,7 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC11B1ED298005D4008D7D8D /* ContentView.swift in Sources */,
-				AC11B1EB298005D4008D7D8D /* Moya_AsyncAwaitApp.swift in Sources */,
+				AC11B1EB298005D4008D7D8D /* Application.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
