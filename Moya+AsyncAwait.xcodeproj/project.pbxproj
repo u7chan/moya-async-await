@@ -158,7 +158,7 @@
 				AC11B21729800C6B008D7D8D /* Data */,
 				AC11B21629800C51008D7D8D /* Repositories */,
 				AC11B21D29801018008D7D8D /* DI */,
-				AC11B21429800C2E008D7D8D /* Feature */,
+				AC11B21429800C2E008D7D8D /* Features */,
 				AC11B1EA298005D4008D7D8D /* Application.swift */,
 			);
 			path = "Moya+AsyncAwait";
@@ -189,13 +189,13 @@
 			path = "Moya+AsyncAwaitUITests";
 			sourceTree = "<group>";
 		};
-		AC11B21429800C2E008D7D8D /* Feature */ = {
+		AC11B21429800C2E008D7D8D /* Features */ = {
 			isa = PBXGroup;
 			children = (
 				AC11B21829800C87008D7D8D /* Activation */,
 				AC11B23729801C6A008D7D8D /* Dashboard */,
 			);
-			path = Feature;
+			path = Features;
 			sourceTree = "<group>";
 		};
 		AC11B21529800C37008D7D8D /* Models */ = {
