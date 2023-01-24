@@ -9,7 +9,6 @@ import Combine
 import SwiftUI
 
 struct ActivationView: View {
-    
     // MARK: - Private
 
     @ObservedObject private var viewModel: ActivationViewModel
@@ -34,7 +33,7 @@ struct ActivationView: View {
                 .frame(width: 280)
 
             Button(action: {
-                //viewModel.signUp()
+                viewModel.activation()
             }) {
                 Text("Activation")
                     .frame(width: 200, height: 45)

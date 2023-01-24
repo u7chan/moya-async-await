@@ -7,9 +7,20 @@
 
 import Foundation
 
-struct VM {
-    
+private final class DI {
+    // let apiModules: ApiModules
+    let repositories: RepositoryModules
+
+    private init() {
+        // self.apiModules = ApiModules.inject()
+        repositories = RepositoryModules.inject() // depsModules: self.apiModules
+    }
+
+    static let shared = DI()
+}
+
+enum VM {
     static func createLaunchViewModel() -> ActivationViewModel {
-        return ActivationViewModel()
+        return ActivationViewModel(activationRepository: DI.shared.repositories.activationRepository)
     }
 }

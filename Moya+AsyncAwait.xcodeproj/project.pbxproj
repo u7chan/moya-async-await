@@ -20,6 +20,9 @@
 		AC11B21C29800E62008D7D8D /* ActivationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B21B29800E62008D7D8D /* ActivationViewModel.swift */; };
 		AC11B21F2980102F008D7D8D /* VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B21E2980102F008D7D8D /* VM.swift */; };
 		AC11B222298011AB008D7D8D /* String+isAlphanumeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B221298011AB008D7D8D /* String+isAlphanumeric.swift */; };
+		AC11B224298012A3008D7D8D /* ActivationRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B223298012A3008D7D8D /* ActivationRepositoryProtocol.swift */; };
+		AC11B227298012C7008D7D8D /* ActivationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B226298012C7008D7D8D /* ActivationRepository.swift */; };
+		AC11B22929801480008D7D8D /* RepositoryModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B22829801480008D7D8D /* RepositoryModules.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		AC11B21B29800E62008D7D8D /* ActivationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationViewModel.swift; sourceTree = "<group>"; };
 		AC11B21E2980102F008D7D8D /* VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VM.swift; sourceTree = "<group>"; };
 		AC11B221298011AB008D7D8D /* String+isAlphanumeric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+isAlphanumeric.swift"; sourceTree = "<group>"; };
+		AC11B223298012A3008D7D8D /* ActivationRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationRepositoryProtocol.swift; sourceTree = "<group>"; };
+		AC11B226298012C7008D7D8D /* ActivationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationRepository.swift; sourceTree = "<group>"; };
+		AC11B22829801480008D7D8D /* RepositoryModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModules.swift; sourceTree = "<group>"; };
 		BBEEFB85BF771BE7228F0B80 /* Pods-Moya+AsyncAwait.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya+AsyncAwait.debug.xcconfig"; path = "Target Support Files/Pods-Moya+AsyncAwait/Pods-Moya+AsyncAwait.debug.xcconfig"; sourceTree = "<group>"; };
 		CA3936DECBFCC1F0F552A856 /* Pods_Moya_AsyncAwaitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moya_AsyncAwaitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A70A9F76A37BE5576B8F60 /* Pods_Moya_AsyncAwait.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moya_AsyncAwait.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,6 +192,7 @@
 		AC11B21629800C51008D7D8D /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				AC11B225298012B4008D7D8D /* Activation */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -209,6 +216,7 @@
 		AC11B21D29801018008D7D8D /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				AC11B22829801480008D7D8D /* RepositoryModules.swift */,
 				AC11B21E2980102F008D7D8D /* VM.swift */,
 			);
 			path = DI;
@@ -220,6 +228,15 @@
 				AC11B221298011AB008D7D8D /* String+isAlphanumeric.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AC11B225298012B4008D7D8D /* Activation */ = {
+			isa = PBXGroup;
+			children = (
+				AC11B223298012A3008D7D8D /* ActivationRepositoryProtocol.swift */,
+				AC11B226298012C7008D7D8D /* ActivationRepository.swift */,
+			);
+			path = Activation;
 			sourceTree = "<group>";
 		};
 		C2D3CAE94726AF0DED339B87 /* Frameworks */ = {
@@ -473,8 +490,11 @@
 				AC11B222298011AB008D7D8D /* String+isAlphanumeric.swift in Sources */,
 				AC11B21A29800CAD008D7D8D /* ActivationView.swift in Sources */,
 				AC11B21C29800E62008D7D8D /* ActivationViewModel.swift in Sources */,
+				AC11B22929801480008D7D8D /* RepositoryModules.swift in Sources */,
 				AC11B21F2980102F008D7D8D /* VM.swift in Sources */,
 				AC11B1EB298005D4008D7D8D /* Application.swift in Sources */,
+				AC11B224298012A3008D7D8D /* ActivationRepositoryProtocol.swift in Sources */,
+				AC11B227298012C7008D7D8D /* ActivationRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
