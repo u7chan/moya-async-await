@@ -22,7 +22,7 @@ private final class DI {
     }
 }
 
-enum VM {
+struct VM {
     static func createLaunchViewModel() -> ActivationViewModel {
         return ActivationViewModel(activationRepository: DI.shared.repositoryModules.activationRepository)
     }
