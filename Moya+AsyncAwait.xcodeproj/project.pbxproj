@@ -96,7 +96,6 @@
 				DBD39FDEF7E742B577524DEE /* Pods-Moya+AsyncAwaitTests.debug.xcconfig */,
 				255F249F96FD51C28050B4BB /* Pods-Moya+AsyncAwaitTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -562,6 +561,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BBEEFB85BF771BE7228F0B80 /* Pods-Moya+AsyncAwait.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -591,6 +591,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7E38204CB966F2A7E1DFD8C4 /* Pods-Moya+AsyncAwait.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -620,7 +621,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DBD39FDEF7E742B577524DEE /* Pods-Moya+AsyncAwaitTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -640,7 +641,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 255F249F96FD51C28050B4BB /* Pods-Moya+AsyncAwaitTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -660,7 +661,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A9777632ADF387A0B976F1B3 /* Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -678,7 +679,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89D0D6FC8236A1513B2CC596 /* Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
