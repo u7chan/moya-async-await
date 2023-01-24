@@ -23,6 +23,9 @@
 		AC11B224298012A3008D7D8D /* ActivationRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B223298012A3008D7D8D /* ActivationRepositoryProtocol.swift */; };
 		AC11B227298012C7008D7D8D /* ActivationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B226298012C7008D7D8D /* ActivationRepository.swift */; };
 		AC11B22929801480008D7D8D /* RepositoryModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B22829801480008D7D8D /* RepositoryModules.swift */; };
+		AC11B22D298016FB008D7D8D /* ActivationApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B22C298016FB008D7D8D /* ActivationApiProtocol.swift */; };
+		AC11B22F2980173F008D7D8D /* ActivationApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B22E2980173F008D7D8D /* ActivationApi.swift */; };
+		AC11B23229801791008D7D8D /* ActivationMoyaApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B23129801791008D7D8D /* ActivationMoyaApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		AC11B223298012A3008D7D8D /* ActivationRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationRepositoryProtocol.swift; sourceTree = "<group>"; };
 		AC11B226298012C7008D7D8D /* ActivationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationRepository.swift; sourceTree = "<group>"; };
 		AC11B22829801480008D7D8D /* RepositoryModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModules.swift; sourceTree = "<group>"; };
+		AC11B22C298016FB008D7D8D /* ActivationApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationApiProtocol.swift; sourceTree = "<group>"; };
+		AC11B22E2980173F008D7D8D /* ActivationApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationApi.swift; sourceTree = "<group>"; };
+		AC11B23129801791008D7D8D /* ActivationMoyaApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationMoyaApi.swift; sourceTree = "<group>"; };
 		BBEEFB85BF771BE7228F0B80 /* Pods-Moya+AsyncAwait.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya+AsyncAwait.debug.xcconfig"; path = "Target Support Files/Pods-Moya+AsyncAwait/Pods-Moya+AsyncAwait.debug.xcconfig"; sourceTree = "<group>"; };
 		CA3936DECBFCC1F0F552A856 /* Pods_Moya_AsyncAwaitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moya_AsyncAwaitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A70A9F76A37BE5576B8F60 /* Pods_Moya_AsyncAwait.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moya_AsyncAwait.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,6 +206,8 @@
 		AC11B21729800C6B008D7D8D /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				AC11B2302980176A008D7D8D /* Moya */,
+				AC11B22A29801696008D7D8D /* Api */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -237,6 +245,31 @@
 				AC11B226298012C7008D7D8D /* ActivationRepository.swift */,
 			);
 			path = Activation;
+			sourceTree = "<group>";
+		};
+		AC11B22A29801696008D7D8D /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				AC11B22B298016BD008D7D8D /* Activation */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		AC11B22B298016BD008D7D8D /* Activation */ = {
+			isa = PBXGroup;
+			children = (
+				AC11B22C298016FB008D7D8D /* ActivationApiProtocol.swift */,
+				AC11B22E2980173F008D7D8D /* ActivationApi.swift */,
+			);
+			path = Activation;
+			sourceTree = "<group>";
+		};
+		AC11B2302980176A008D7D8D /* Moya */ = {
+			isa = PBXGroup;
+			children = (
+				AC11B23129801791008D7D8D /* ActivationMoyaApi.swift */,
+			);
+			path = Moya;
 			sourceTree = "<group>";
 		};
 		C2D3CAE94726AF0DED339B87 /* Frameworks */ = {
@@ -489,11 +522,14 @@
 			files = (
 				AC11B222298011AB008D7D8D /* String+isAlphanumeric.swift in Sources */,
 				AC11B21A29800CAD008D7D8D /* ActivationView.swift in Sources */,
+				AC11B23229801791008D7D8D /* ActivationMoyaApi.swift in Sources */,
 				AC11B21C29800E62008D7D8D /* ActivationViewModel.swift in Sources */,
 				AC11B22929801480008D7D8D /* RepositoryModules.swift in Sources */,
 				AC11B21F2980102F008D7D8D /* VM.swift in Sources */,
 				AC11B1EB298005D4008D7D8D /* Application.swift in Sources */,
+				AC11B22F2980173F008D7D8D /* ActivationApi.swift in Sources */,
 				AC11B224298012A3008D7D8D /* ActivationRepositoryProtocol.swift in Sources */,
+				AC11B22D298016FB008D7D8D /* ActivationApiProtocol.swift in Sources */,
 				AC11B227298012C7008D7D8D /* ActivationRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
