@@ -61,7 +61,8 @@ final class ActivationViewModel: ObservableObject {
     func activation() {
         Task {
             do {
-                try await self.activationRepository.activation(code: self.code, pin: self.pin)
+                let result = try await self.activationRepository.activation(code: self.code, pin: self.pin)
+                print("[Success]: \(result.origin)")
             } catch {
                 print("[ERROR]: \(error)")
             }

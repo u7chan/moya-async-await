@@ -8,5 +8,5 @@
 import Foundation
 
 protocol ActivationApiProtocol: AnyObject {
-    func activation(code: String, pin: String) async throws
+    func activation(code: String, pin: String) async throws -> ActivationEntity
 }

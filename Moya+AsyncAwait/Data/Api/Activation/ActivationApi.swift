@@ -18,14 +18,18 @@ final class ActivationApi {
 // MARK: - ActivationApiProtocol
 
 extension ActivationApi: ActivationApiProtocol {
-    func activation(code: String, pin: String) async throws {
-        provider.request(.activation(code: code, pin: pin), completion: { result in
-            switch result {
-            case let .success(response):
-                print("response: \(response)")
-            case let .failure(error):
-                print("error: \(error)")
-            }
-        })
+    func activation(code: String, pin: String) async throws -> ActivationEntity {
+        let result = await provider
+            .requestAsync(.activation(code: code, pin: pin))
+            .filterSuccessfulStatusCodes()
+            .map(ActivationEntity.self)
+        switch result {
+        case let .success(data):
+            print("#success: \(data)")
+            return data
+        case let .failure(error):
+            print("#error: \(error)")
+            throw error
+        }
     }
 }

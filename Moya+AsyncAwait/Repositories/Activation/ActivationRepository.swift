@@ -18,7 +18,7 @@ final class ActivationRepository {
 // MARK: - ActivationRepositoryProtocol
 
 extension ActivationRepository: ActivationRepositoryProtocol {
-    func activation(code: String, pin: String) async throws {
-        try await activationApi.activation(code: code, pin: pin)
+    func activation(code: String, pin: String) async throws -> ActivationEntity {
+        return try await activationApi.activation(code: code, pin: pin)
     }
 }
