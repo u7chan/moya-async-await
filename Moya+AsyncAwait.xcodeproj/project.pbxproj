@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AF476AE028AECDC067AF313 /* Pods_Moya_AsyncAwait.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A70A9F76A37BE5576B8F60 /* Pods_Moya_AsyncAwait.framework */; };
+		52C6DC6CD2D7FCD486F9D5B5 /* Pods_Moya_AsyncAwait_Moya_AsyncAwaitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53FD9D5311412AE0B5BFF25 /* Pods_Moya_AsyncAwait_Moya_AsyncAwaitUITests.framework */; };
+		55AC5B5EDA4F3223756AE352 /* Pods_Moya_AsyncAwaitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3936DECBFCC1F0F552A856 /* Pods_Moya_AsyncAwaitTests.framework */; };
 		AC11B1EB298005D4008D7D8D /* Moya_AsyncAwaitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B1EA298005D4008D7D8D /* Moya_AsyncAwaitApp.swift */; };
 		AC11B1ED298005D4008D7D8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B1EC298005D4008D7D8D /* ContentView.swift */; };
 		AC11B1EF298005D7008D7D8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC11B1EE298005D7008D7D8D /* Assets.xcassets */; };
@@ -34,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		255F249F96FD51C28050B4BB /* Pods-Moya+AsyncAwaitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya+AsyncAwaitTests.release.xcconfig"; path = "Target Support Files/Pods-Moya+AsyncAwaitTests/Pods-Moya+AsyncAwaitTests.release.xcconfig"; sourceTree = "<group>"; };
+		7E38204CB966F2A7E1DFD8C4 /* Pods-Moya+AsyncAwait.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya+AsyncAwait.release.xcconfig"; path = "Target Support Files/Pods-Moya+AsyncAwait/Pods-Moya+AsyncAwait.release.xcconfig"; sourceTree = "<group>"; };
+		89D0D6FC8236A1513B2CC596 /* Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests.release.xcconfig"; path = "Target Support Files/Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests/Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A9777632ADF387A0B976F1B3 /* Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests.debug.xcconfig"; path = "Target Support Files/Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests/Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC11B1E7298005D4008D7D8D /* Moya+AsyncAwait.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moya+AsyncAwait.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC11B1EA298005D4008D7D8D /* Moya_AsyncAwaitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moya_AsyncAwaitApp.swift; sourceTree = "<group>"; };
 		AC11B1EC298005D4008D7D8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +51,11 @@
 		AC11B201298005D7008D7D8D /* Moya+AsyncAwaitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Moya+AsyncAwaitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC11B205298005D7008D7D8D /* Moya_AsyncAwaitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moya_AsyncAwaitUITests.swift; sourceTree = "<group>"; };
 		AC11B207298005D7008D7D8D /* Moya_AsyncAwaitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moya_AsyncAwaitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BBEEFB85BF771BE7228F0B80 /* Pods-Moya+AsyncAwait.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya+AsyncAwait.debug.xcconfig"; path = "Target Support Files/Pods-Moya+AsyncAwait/Pods-Moya+AsyncAwait.debug.xcconfig"; sourceTree = "<group>"; };
+		CA3936DECBFCC1F0F552A856 /* Pods_Moya_AsyncAwaitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moya_AsyncAwaitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6A70A9F76A37BE5576B8F60 /* Pods_Moya_AsyncAwait.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moya_AsyncAwait.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBD39FDEF7E742B577524DEE /* Pods-Moya+AsyncAwaitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya+AsyncAwaitTests.debug.xcconfig"; path = "Target Support Files/Pods-Moya+AsyncAwaitTests/Pods-Moya+AsyncAwaitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E53FD9D5311412AE0B5BFF25 /* Pods_Moya_AsyncAwait_Moya_AsyncAwaitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moya_AsyncAwait_Moya_AsyncAwaitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AF476AE028AECDC067AF313 /* Pods_Moya_AsyncAwait.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55AC5B5EDA4F3223756AE352 /* Pods_Moya_AsyncAwaitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,12 +79,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C6DC6CD2D7FCD486F9D5B5 /* Pods_Moya_AsyncAwait_Moya_AsyncAwaitUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F36F636957DE086847A853E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBEEFB85BF771BE7228F0B80 /* Pods-Moya+AsyncAwait.debug.xcconfig */,
+				7E38204CB966F2A7E1DFD8C4 /* Pods-Moya+AsyncAwait.release.xcconfig */,
+				A9777632ADF387A0B976F1B3 /* Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests.debug.xcconfig */,
+				89D0D6FC8236A1513B2CC596 /* Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests.release.xcconfig */,
+				DBD39FDEF7E742B577524DEE /* Pods-Moya+AsyncAwaitTests.debug.xcconfig */,
+				255F249F96FD51C28050B4BB /* Pods-Moya+AsyncAwaitTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AC11B1DE298005D3008D7D8D = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +107,8 @@
 				AC11B1FA298005D7008D7D8D /* Moya+AsyncAwaitTests */,
 				AC11B204298005D7008D7D8D /* Moya+AsyncAwaitUITests */,
 				AC11B1E8298005D4008D7D8D /* Products */,
+				4F36F636957DE086847A853E /* Pods */,
+				C2D3CAE94726AF0DED339B87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +158,16 @@
 			path = "Moya+AsyncAwaitUITests";
 			sourceTree = "<group>";
 		};
+		C2D3CAE94726AF0DED339B87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6A70A9F76A37BE5576B8F60 /* Pods_Moya_AsyncAwait.framework */,
+				E53FD9D5311412AE0B5BFF25 /* Pods_Moya_AsyncAwait_Moya_AsyncAwaitUITests.framework */,
+				CA3936DECBFCC1F0F552A856 /* Pods_Moya_AsyncAwaitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC11B20B298005D7008D7D8D /* Build configuration list for PBXNativeTarget "Moya+AsyncAwait" */;
 			buildPhases = (
+				FAE6BB370C071A241C0C5B2A /* [CP] Check Pods Manifest.lock */,
 				AC11B1E3298005D4008D7D8D /* Sources */,
 				AC11B1E4298005D4008D7D8D /* Frameworks */,
 				AC11B1E5298005D4008D7D8D /* Resources */,
+				7EEBE1143F4995CFD629A943 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC11B20E298005D7008D7D8D /* Build configuration list for PBXNativeTarget "Moya+AsyncAwaitTests" */;
 			buildPhases = (
+				83D31D51B21F6BB76C12C3B9 /* [CP] Check Pods Manifest.lock */,
 				AC11B1F3298005D7008D7D8D /* Sources */,
 				AC11B1F4298005D7008D7D8D /* Frameworks */,
 				AC11B1F5298005D7008D7D8D /* Resources */,
@@ -169,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC11B211298005D7008D7D8D /* Build configuration list for PBXNativeTarget "Moya+AsyncAwaitUITests" */;
 			buildPhases = (
+				86CF4B4574945E5D2CA892F1 /* [CP] Check Pods Manifest.lock */,
 				AC11B1FD298005D7008D7D8D /* Sources */,
 				AC11B1FE298005D7008D7D8D /* Frameworks */,
 				AC11B1FF298005D7008D7D8D /* Resources */,
+				9E327EB64041DAE477F380D9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,6 +297,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7EEBE1143F4995CFD629A943 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moya+AsyncAwait/Pods-Moya+AsyncAwait-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moya+AsyncAwait/Pods-Moya+AsyncAwait-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moya+AsyncAwait/Pods-Moya+AsyncAwait-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83D31D51B21F6BB76C12C3B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Moya+AsyncAwaitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86CF4B4574945E5D2CA892F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E327EB64041DAE477F380D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests/Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests/Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests/Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAE6BB370C071A241C0C5B2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Moya+AsyncAwait-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC11B1E3298005D4008D7D8D /* Sources */ = {
@@ -411,6 +560,7 @@
 		};
 		AC11B20C298005D7008D7D8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBEEFB85BF771BE7228F0B80 /* Pods-Moya+AsyncAwait.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -439,6 +589,7 @@
 		};
 		AC11B20D298005D7008D7D8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E38204CB966F2A7E1DFD8C4 /* Pods-Moya+AsyncAwait.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -467,6 +618,7 @@
 		};
 		AC11B20F298005D7008D7D8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBD39FDEF7E742B577524DEE /* Pods-Moya+AsyncAwaitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +638,7 @@
 		};
 		AC11B210298005D7008D7D8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 255F249F96FD51C28050B4BB /* Pods-Moya+AsyncAwaitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -505,6 +658,7 @@
 		};
 		AC11B212298005D7008D7D8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9777632ADF387A0B976F1B3 /* Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +676,7 @@
 		};
 		AC11B213298005D7008D7D8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89D0D6FC8236A1513B2CC596 /* Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
