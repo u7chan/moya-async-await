@@ -10,8 +10,7 @@ import Moya
 final class ActivationApi {
     private let provider: MoyaProvider<Activation>
 
-    init(provider: MoyaProvider<Activation>
-    ) {
+    init(provider: MoyaProvider<Activation>) {
         self.provider = provider
     }
 }
@@ -19,5 +18,14 @@ final class ActivationApi {
 // MARK: - ActivationApiProtocol
 
 extension ActivationApi: ActivationApiProtocol {
-    func activation(code _: String, pin _: String) async throws {}
+    func activation(code: String, pin: String) async throws {
+        provider.request(.activation(code: code, pin: pin), completion: { result in
+            switch result {
+            case let .success(response):
+                print("response: \(response)")
+            case let .failure(error):
+                print("error: \(error)")
+            }
+        })
+    }
 }

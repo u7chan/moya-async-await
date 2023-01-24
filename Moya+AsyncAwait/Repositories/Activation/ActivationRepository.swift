@@ -10,9 +10,7 @@ import Foundation
 final class ActivationRepository {
     private let activationApi: ActivationApiProtocol
 
-    init(
-        activationApi: ActivationApiProtocol
-    ) {
+    init(activationApi: ActivationApiProtocol) {
         self.activationApi = activationApi
     }
 }
@@ -21,7 +19,6 @@ final class ActivationRepository {
 
 extension ActivationRepository: ActivationRepositoryProtocol {
     func activation(code: String, pin: String) async throws {
-        // TODO:
-        print("code: \(code), pin: \(pin)")
+        try await activationApi.activation(code: code, pin: pin)
     }
 }

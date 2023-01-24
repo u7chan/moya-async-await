@@ -11,8 +11,9 @@ import SwiftUI
 struct Application: App {
     var body: some Scene {
         WindowGroup {
-            //DashboardView()
-            ActivationView(viewModel: VM.createLaunchViewModel())
+            NavigationStack {
+                DashboardView()
+            }
         }
     }
 }
