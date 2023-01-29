@@ -13,12 +13,12 @@ final class ActivationViewModel: ObservableObject {
 
     @Published var code: String = ""
     @Published var pin: String = ""
+    @Published var historyBack: Bool = false
 
     // MARK: - Private
 
     @Published private(set) var codeInvalid: Bool = true
     @Published private(set) var pinInvalid: Bool = true
-
     @Published private(set) var invalid: Bool = true
 
     private var disposables = [AnyCancellable]()
@@ -59,12 +59,33 @@ final class ActivationViewModel: ObservableObject {
     // MARK: - Public methods
 
     func activation() {
+        runCatch {
+            try await self.activationRepository.activation(code: self.code, pin: self.pin)
+        } onSuccess: { entity in
+            print("[Success]: \(entity.origin)")
+            self.historyBack = true
+        } onError: { error in
+            print("[ERROR]: \(error)")
+        }
+    }
+}
+
+extension ObservableObject {
+    func runCatch<T>(
+        closure: @escaping () async throws -> T,
+        onSuccess: @escaping (T) -> Void,
+        onError: @escaping (Error) -> Void
+    ) {
         Task {
             do {
-                let result = try await self.activationRepository.activation(code: self.code, pin: self.pin)
-                print("[Success]: \(result.origin)")
+                let result = try await closure()
+                DispatchQueue.main.async {
+                    onSuccess(result)
+                }
             } catch {
-                print("[ERROR]: \(error)")
+                DispatchQueue.main.async {
+                    onError(error)
+                }
             }
         }
     }

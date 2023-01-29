@@ -14,6 +14,8 @@ struct ActivationView: View {
     @ObservedObject private var viewModel: ActivationViewModel
     private var disposables = [AnyCancellable]()
 
+    @Environment(\.dismiss) private var dismiss
+
     // MARK: - Init
 
     init(viewModel: ActivationViewModel) {
@@ -44,6 +46,11 @@ struct ActivationView: View {
             .background(viewModel.invalid ? Color.gray : Color.blue)
             .disabled(viewModel.invalid)
             .padding(EdgeInsets(top: 15, leading: 0, bottom: 30, trailing: 0))
+            .onReceive(viewModel.$historyBack) { value in
+                if value {
+                    dismiss()
+                }
+            }
         }
     }
 }
