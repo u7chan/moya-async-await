@@ -34,8 +34,13 @@ final class ActivationViewModelTest: XCTestCase {
 
     func test_activation() throws {
         // When
+        let expected = Obj(["pin": "#pin", "code": "#code", "a": 1])
+        var actual = Obj(["pin": "", "code": ""])
+        viewModel.code = expected.str("pin")
+        viewModel.pin = expected.str("code")
         activationRepository.activationHandler = { pin, code in
-            print("pin: \(pin), code: \(code)")
+            actual["pin"] = pin
+            actual["code"] = code
             return ActivationEntity(origin: "#Dummy")
         }
 
@@ -44,5 +49,21 @@ final class ActivationViewModelTest: XCTestCase {
 
         // Then
         XCTAssertEqual(1, activationRepository.activationCallCount)
+        XCTAssertEqual(expected.str("code"), actual.str("code"))
+        XCTAssertEqual(expected.str("pin"), actual.str("pin"))
     }
+}
+
+// -------------------------------------------------------------
+
+typealias ObjType = [String: Any]
+
+extension ObjType {
+    func str(_ key: String) -> String {
+        return self[key] as! String
+    }
+}
+
+func Obj(_ args: ObjType) -> ObjType {
+    return args
 }
