@@ -340,6 +340,7 @@
 			buildConfigurationList = AC11B20E298005D7008D7D8D /* Build configuration list for PBXNativeTarget "Moya+AsyncAwaitTests" */;
 			buildPhases = (
 				83D31D51B21F6BB76C12C3B9 /* [CP] Check Pods Manifest.lock */,
+				ACC1A3C9298AA66D005CACB0 /* ShellScript */,
 				AC11B1F3298005D7008D7D8D /* Sources */,
 				AC11B1F4298005D7008D7D8D /* Frameworks */,
 				AC11B1F5298005D7008D7D8D /* Resources */,
@@ -521,6 +522,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests/Pods-Moya+AsyncAwait-Moya+AsyncAwaitUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		ACC1A3C9298AA66D005CACB0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./scripts/format.sh ./Moya+AsyncAwait\n";
 		};
 		FAE6BB370C071A241C0C5B2A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
