@@ -34,7 +34,7 @@ final class ActivationViewModelTest: XCTestCase {
 
     func test_activation() throws {
         // When
-        let expected = Obj(["pin": "#pin", "code": "#code", "a": 1])
+        let expected = Obj(["pin": "#pin", "code": "#code"])
         var actual = Obj(["pin": "", "code": ""])
         viewModel.code = expected.str("pin")
         viewModel.pin = expected.str("code")
