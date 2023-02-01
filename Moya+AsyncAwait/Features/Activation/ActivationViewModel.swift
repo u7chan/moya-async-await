@@ -23,13 +23,16 @@ final class ActivationViewModel: ObservableObject {
 
     private var disposables = [AnyCancellable]()
 
+    private let scheduler: SchedulerProtocol
     private let activationRepository: ActivationRepositoryProtocol
 
     // MARK: - Init
 
     init(
+        scheduler: SchedulerProtocol,
         activationRepository: ActivationRepositoryProtocol
     ) {
+        self.scheduler = scheduler
         self.activationRepository = activationRepository
 
         $code
@@ -59,7 +62,7 @@ final class ActivationViewModel: ObservableObject {
     // MARK: - Public methods
 
     func activation() {
-        runCatch {
+        scheduler.runCatch {
             try await self.activationRepository.activation(code: self.code, pin: self.pin)
         } onSuccess: { entity in
             print("[Success]: \(entity.origin)")
@@ -70,23 +73,3 @@ final class ActivationViewModel: ObservableObject {
     }
 }
 
-extension ObservableObject {
-    func runCatch<T>(
-        closure: @escaping () async throws -> T,
-        onSuccess: @escaping (T) -> Void,
-        onError: @escaping (Error) -> Void
-    ) {
-        Task {
-            do {
-                let result = try await closure()
-                DispatchQueue.main.async {
-                    onSuccess(result)
-                }
-            } catch {
-                DispatchQueue.main.async {
-                    onError(error)
-                }
-            }
-        }
-    }
-}

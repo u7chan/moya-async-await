@@ -9,7 +9,10 @@ import Foundation
 
 struct VM {
     static func createLaunchViewModel() -> ActivationViewModel {
-        return ActivationViewModel(activationRepository: DI.shared.repositoryModules.activationRepository)
+        return ActivationViewModel(
+            scheduler: AsyncScheduler(), 
+            activationRepository: DI.shared.repositoryModules.activationRepository
+        )
     }
 }
 

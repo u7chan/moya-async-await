@@ -31,6 +31,10 @@
 		AC11B23929801C81008D7D8D /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B23829801C81008D7D8D /* DashboardView.swift */; };
 		AC11B23C298029FC008D7D8D /* ActivationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B23B298029FC008D7D8D /* ActivationEntity.swift */; };
 		AC11B23E29802A3B008D7D8D /* Moya+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11B23D29802A3B008D7D8D /* Moya+Async.swift */; };
+		ACC1A3CC298AA9C1005CACB0 /* SchedulerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A3CB298AA9C1005CACB0 /* SchedulerProtocol.swift */; };
+		ACC1A3CE298AAE10005CACB0 /* AsyncScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A3CD298AAE10005CACB0 /* AsyncScheduler.swift */; };
+		ACC1A3D0298AAE3F005CACB0 /* TestScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A3CF298AAE3F005CACB0 /* TestScheduler.swift */; };
+		ACC1A3D1298AAE42005CACB0 /* SchedulerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A3CB298AA9C1005CACB0 /* SchedulerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +83,9 @@
 		AC11B23829801C81008D7D8D /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		AC11B23B298029FC008D7D8D /* ActivationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationEntity.swift; sourceTree = "<group>"; };
 		AC11B23D29802A3B008D7D8D /* Moya+Async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Async.swift"; sourceTree = "<group>"; };
+		ACC1A3CB298AA9C1005CACB0 /* SchedulerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerProtocol.swift; sourceTree = "<group>"; };
+		ACC1A3CD298AAE10005CACB0 /* AsyncScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncScheduler.swift; sourceTree = "<group>"; };
+		ACC1A3CF298AAE3F005CACB0 /* TestScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScheduler.swift; sourceTree = "<group>"; };
 		BBEEFB85BF771BE7228F0B80 /* Pods-Moya+AsyncAwait.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya+AsyncAwait.debug.xcconfig"; path = "Target Support Files/Pods-Moya+AsyncAwait/Pods-Moya+AsyncAwait.debug.xcconfig"; sourceTree = "<group>"; };
 		CA3936DECBFCC1F0F552A856 /* Pods_Moya_AsyncAwaitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moya_AsyncAwaitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A70A9F76A37BE5576B8F60 /* Pods_Moya_AsyncAwait.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moya_AsyncAwait.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				AC11B22029801196008D7D8D /* Extensions */,
+				ACC1A3CA298AA998005CACB0 /* Schedulers */,
 				AC11B23A298029BB008D7D8D /* Entities */,
 			);
 			path = Models;
@@ -303,6 +311,16 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		ACC1A3CA298AA998005CACB0 /* Schedulers */ = {
+			isa = PBXGroup;
+			children = (
+				ACC1A3CB298AA9C1005CACB0 /* SchedulerProtocol.swift */,
+				ACC1A3CD298AAE10005CACB0 /* AsyncScheduler.swift */,
+				ACC1A3CF298AAE3F005CACB0 /* TestScheduler.swift */,
+			);
+			path = Schedulers;
+			sourceTree = "<group>";
+		};
 		C2D3CAE94726AF0DED339B87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -340,10 +358,10 @@
 			buildConfigurationList = AC11B20E298005D7008D7D8D /* Build configuration list for PBXNativeTarget "Moya+AsyncAwaitTests" */;
 			buildPhases = (
 				83D31D51B21F6BB76C12C3B9 /* [CP] Check Pods Manifest.lock */,
-				ACC1A3C9298AA66D005CACB0 /* ShellScript */,
 				AC11B1F3298005D7008D7D8D /* Sources */,
 				AC11B1F4298005D7008D7D8D /* Frameworks */,
 				AC11B1F5298005D7008D7D8D /* Resources */,
+				ACC1A3C9298AA66D005CACB0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -583,7 +601,9 @@
 				AC11B224298012A3008D7D8D /* ActivationRepositoryProtocol.swift in Sources */,
 				AC11B22D298016FB008D7D8D /* ActivationApiProtocol.swift in Sources */,
 				AC11B234298018A9008D7D8D /* ApiModules.swift in Sources */,
+				ACC1A3CC298AA9C1005CACB0 /* SchedulerProtocol.swift in Sources */,
 				AC11B227298012C7008D7D8D /* ActivationRepository.swift in Sources */,
+				ACC1A3CE298AAE10005CACB0 /* AsyncScheduler.swift in Sources */,
 				AC11B23C298029FC008D7D8D /* ActivationEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,7 +612,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC1A3D1298AAE42005CACB0 /* SchedulerProtocol.swift in Sources */,
 				AC11B1FC298005D7008D7D8D /* Moya_AsyncAwaitTests.swift in Sources */,
+				ACC1A3D0298AAE3F005CACB0 /* TestScheduler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
