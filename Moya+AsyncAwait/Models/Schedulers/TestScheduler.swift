@@ -9,11 +9,10 @@ import Foundation
 
 final class TestScheduler: SchedulerProtocol {
     func runCatch<T>(
-        closure: @escaping () async throws -> T,
-        onSuccess: @escaping (T) -> Void,
-        onError: @escaping (Error) -> Void
+        closure _: @escaping () async throws -> T,
+        onSuccess _: @escaping (T) -> Void,
+        onError _: @escaping (Error) -> Void
     ) {
         print("Test")
     }
 }
-
